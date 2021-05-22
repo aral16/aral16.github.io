@@ -1,0 +1,552 @@
+
+
+
+header { 
+  background-image: url("../images/pif.jpg");
+  background-repeat: no-repeat;
+  background-size: 100em;
+  
+  background-position: center;
+  margin: auto;
+  padding-top: 13%;
+  text-align:center;
+  color: green;
+
+
+}
+
+
+.menu_liste{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    background-color: green;
+    border-radius: 0px 0px 20px 20px;
+    font-size: 24px;
+    font-weight: 900;
+    color: lightgreen;
+    border-style: solid;
+    border-width: 0px 2px 2px 2px; 
+    position: sticky;  /* Pour toujours faire apparaitre le menu même en défilant vers le bas*/
+    top: 0;
+}
+
+.menu_liste li{
+    width: 176px;
+    display: inline;
+    padding: 25px;
+    text-align: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.menu_liste #fait-insolite, #quiz, #mythologie, #accueil{
+    border-style: solid;
+    border-width: 2px 2px 0px 0px;
+}
+
+.menu_liste #contacts{
+    border-style: solid;
+    border-width: 2px 0px 0px 0px;
+}
+
+.menu_liste li:hover{
+    font-size: 29px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    transition: all 0.5s;
+}
+
+.menu_liste li{
+    transition: all 0.5s;
+}
+
+.dropdown{
+    display: none;
+    margin: 15px 0px 0px -15px;
+}
+
+.menu_liste a {
+  text-decoration: none; /* Pour éviter que les liens dans le Menu soit souligné */
+  color: black;
+  
+  
+  font-family: Cursive, Arial,Impact, Charcoal, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size:16pt;
+}
+
+
+
+footer{
+	margin-left: 40em;
+	
+	
+	
+	height: 30px;
+	padding-top: 1px;
+	
+  
+}
+
+
+
+.contenu h2{
+	color: olive;
+
+}
+
+.contenu{
+  padding: 10px 80px; /* Pour décaler mon texte vers la droite*/
+  background-image: url("../images/im1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  
+}
+
+
+
+.contenu h1{
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.texte{
+    flex-basis: 70%;
+    text-align:justify;
+
+
+}
+
+
+@media screen and (max-width: 925px){
+    .dropdown{
+        display: block;
+    }
+    .menu_list{
+        display: none;
+    }
+    nav:hover .menu_list{
+        display: flex;
+        width: 681px;
+    }
+    nav:hover .menu_list #attraction{
+        border-right-width: 0px;
+    }
+    nav:hover .dropdown{
+        display: none;
+    }
+}
+
+
+.motif-puce li{
+  display: list-item;
+  list-style-image: url("../images/motifpuce.jpg");
+  
+
+}
+
+/* CSS CV */
+
+
+/* Styles généraux*/
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: #ededed;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #bbb;
+    background-color: #fff;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+section > div{
+    width: 90%;
+}
+
+
+/*SECTION INFOS*/
+.photo{
+    text-align: center;
+    padding-top: 4em;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 10px #777;
+    border-radius: 50%;
+    margin-top: -80px;
+
+}
+.prez{
+    border-bottom: 2px dashed #ccc;
+}
+
+.prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto 0px auto;
+}
+.social img{
+    width: 40px;
+    height: 40px;
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px ridge grey;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.c85{
+    width: 85%;
+    background-color: #8B8;
+}
+.c90{
+    width: 90%;
+    background-color: #4B8;
+}
+.c95{
+    width: 95%;
+    background-color: #4B8;
+}
+.c100{
+    width: 100%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+.c70{
+    width: 70%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+.c60{
+    width: 60%;
+    background-color: #4B8;
+    border-radius: 5px;
+}
+
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+/*SECTION INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+
+/*VERSION BUREAU DU CV*/
+@media screen and (min-width: 980px){
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #bbb;
+    }
+    a:hover{
+        color: #EA0;
+    }
+   
+    .prez, .contact{
+        flex: 0 0 45%;
+    }
+    .prez{
+        border-bottom: none;
+        border-right: 2px solid #ccc;
+        padding-right: 20px;
+        margin-left: auto;
+    }
+    .contact{
+        padding-left: 20px;
+        margin-right: auto;
+    }
+    .prez a{
+        border: 2px solid transparent;
+    }
+    .prez a:hover{
+        color: #f28835;
+        background-color: #fff;
+        border: 2px solid #f28835;
+        box-shadow: 0px 0px 20px #666;
+    }
+    .exp-logo{
+        flex: 0 0 10%;
+    }
+    .exp-info, .exp-desc{
+        flex: 0 0 85%;
+        margin-left: auto;
+    }
+    .interet{
+        flex: 0 1 25%;
+    }
+}
+
+/* QUIZZ */
+
+
+.contenu{
+    font-size: 20px;
+    font-family: 'Work Sans', sans-serif;
+    color: #333;
+  font-weight: 300;
+  text-align: center;
+  
+}
+
+.question{
+  font-size: 30px;
+    margin-bottom: 20px;
+  
+  margin-left: 1em;
+  font-family: cursive;
+  text-align: center;
+  color: black;
+
+}
+.reponses {
+  margin-bottom: 20px;
+  
+  display: inline-block;
+  margin-left: 28em;
+
+}
+.reponses label{
+  display: block;
+  margin-bottom: 10px;
+
+}
+ button{
+  font-family: 'Work Sans', sans-serif;
+    font-size: 22px;
+    background-color: green;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 400px;
+    margin-top: 90px;
+}
+.contenu button:hover{
+    background-color: lightblue;
+}
+
+
+
+
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+  
+}
+.active-slide{
+  opacity: 1;
+  z-index: 2
+  
+}
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+
+}
+
+@media screen and (max-width: 300px){
+    .slide{
+        position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  opacity: 0;
+
+    }
+    .active-slide{
+        opacity: 1;
+    }
+    .quiz-container{
+         position: relative;
+  height: 200px;
+  margin-top: 40px;
+    }
+    .reponses{
+        margin-bottom: 20px;
+  
+  display: inline-block;
+  margin-left: 28em;
+    }
+    .reponses label{
+        display: block;
+  margin-bottom: 10px;
+    }
+}
+
+
+
+/* Mythologie */ 
+
+
+.mytho{
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
+}
+.questions{
+    margin-bottom: 10px;
+    font-weight: 600;
+    margin-left: 2em;
+    color: green;
+    
+}
+.answers {
+  margin-bottom: 20px;
+  
+  display: inline-block;
+  margin-left: 2em;
+
+}
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+
+}
+#soumis{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #279;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    margin-left: 6em;
+}
+#soumis:hover{
+    background-color: #38a;
+}
+
